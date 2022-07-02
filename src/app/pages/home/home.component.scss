@@ -1,11 +1,11 @@
-header{
+nav{
     position: absolute;
     width: -webkit-fill-available;
     height: 88px;
     left: 0px;
     top: 0px;
     background: linear-gradient(180deg, #7D58FF 78.39%, #E5EDED 100%);
-    #area-buttom{
+    .area-buttom{
         width: fit-content;
         margin-left: auto;
         padding-top: 15px;
@@ -25,7 +25,7 @@ header{
     }
 }
 
-.div-banner-landing{
+.banner-landing{
     background-image: url(../../../assets/images/baner_landing.png);
     height: 650px;
     width: -webkit-fill-available;
@@ -73,7 +73,7 @@ header{
     }
 }
     
-.presentComerce{
+.present-comerce{
     align-items: center;
     background-image: url(../../../assets/images/onda_landing.png);
     background-repeat: no-repeat;
@@ -143,9 +143,13 @@ header{
         .container-business{
             padding: 5px;
             width: 125px;
-            background: gray;
             margin-bottom: 20px;
             height: 125px;
+            align-items: center;
+            display: flex;
+            img{
+                width: -webkit-fill-available;
+            }
         }
     }
 }
@@ -158,7 +162,7 @@ header{
     background-size: cover;
     margin-top: 30px;
     height: 500px;
-    #advantage{
+    .advantage-joining{
         font-weight: 900;
         font-size: 57px;
         width: fit-content;
