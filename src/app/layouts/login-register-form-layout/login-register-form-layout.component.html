@@ -1,0 +1,41 @@
+<div class="login-and-register-layout" [ngClass]="type">
+  <div class="side-seciton">
+    <h3>{{ sidebarTitle }}</h3>
+    <img src="{{ image }}" alt="login image" />
+    <app-button
+      type="outline"
+      text="{{ sidebarBtnText }}"
+      redirectTo="{{ redirectTo }}"
+    ></app-button>
+  </div>
+  <main class="login-register-container">
+    <h4>{{ title }}</h4>
+
+    <div class="logos-container">
+      <div class="logo-wrapper">
+        <fa-icon [icon]="facebookIcon"></fa-icon>
+      </div>
+      <div class="logo-wrapper">
+        <fa-icon [icon]="googleIcon"></fa-icon>
+      </div>
+      <div class="logo-wrapper">
+        <fa-icon [icon]="linkedinIcon"></fa-icon>
+      </div>
+    </div>
+
+    <p class="alternative-options-text">o prueba con</p>
+
+    <form>
+      <app-text-input labelText="Correo electrónico"></app-text-input>
+      <app-text-input
+        labelText="Contraseña"
+        [bottomAction]="recoverPasswordBtnData"
+      ></app-text-input>
+      <app-button
+        type="primary"
+        text="Iniciar sesión"
+        [fullWidth]="true"
+      ></app-button>
+    </form>
+  </main>
+</div>
