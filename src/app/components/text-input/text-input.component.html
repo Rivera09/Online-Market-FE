@@ -1,0 +1,12 @@
+<div class="form-input-wrapper">
+  <label for="{{ inputId }}">{{ labelText }}</label>
+  <input id="{{ inputId }}" type="text" class="text-input" />
+  <button
+    type="button"
+    *ngIf="bottomAction"
+    class="btn input-bottom-action"
+    (click)="bottomAction.action()"
+  >
+    {{ bottomAction.text }}
+  </button>
+</div>

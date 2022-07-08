@@ -1,3 +1,5 @@
+@import "component";
+
 nav {
   position: absolute;
   width: -webkit-fill-available;
@@ -7,19 +9,17 @@ nav {
   background: linear-gradient(180deg, #7d58ff 78.39%, #e5eded 100%);
   .area-buttom {
     width: fit-content;
-    margin-left: auto;
-    padding-top: 15px;
-    padding-right: 15px;
+    margin: 15px 15px 0 auto;
+    display: flex;
+    gap: 15px;
+
     .button-header {
-      padding: 0px 24px;
-      width: 164px;
-      margin-left: 15px;
-      height: 40px;
-      background: #6338e7;
+      padding: 10px 24px;
+      background: $primary;
       box-shadow: 0px 1px 1px rgb(0 0 0 / 25%);
       border-radius: 20px;
       border: none;
-      color: #f8f8f8;
+      color: $white1;
       font-size: 14px;
     }
   }
@@ -114,7 +114,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    button {
+    button,
+    a {
       width: 180px;
       height: 40px;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);

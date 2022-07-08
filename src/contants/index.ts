@@ -1,2 +1,2 @@
 export { default as ROUTES } from './routes';
-export { LOGO_PATHS } from './imagesPath';
+export { LOGO_PATHS, LOGIN_IMG } from './imagesPath';
