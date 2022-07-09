@@ -6,3 +6,5 @@ export const LOGO_PATHS = {
 };
 
 export const LOGIN_IMG = 'assets/images/img-login.png';
+
+export const RECOVER_PASSWORD = 'assets/images/recover.png';
