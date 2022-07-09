@@ -7,7 +7,8 @@ import { ROUTES } from '../../../contants';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  loginPath = ROUTES.LOGIN.ROOT;
+  loginRoute = ROUTES.LOGIN.ROOT;
+  registerRoute = ROUTES.REGISTER.ROOT;
 
   constructor() {}
 
