@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { generate } from 'shortid';
 
 @Component({
   selector: 'app-text-input',
@@ -7,13 +6,10 @@ import { generate } from 'shortid';
   styleUrls: ['./text-input.component.scss'],
 })
 export class TextInputComponent implements OnInit {
-  @Input() labelText = '';
-  @Input() bottomAction: { text: string; action: () => void } | undefined;
-  inputId = '';
+  @Input() inputId: string = '';
+  @Input() name: string = '';
 
   constructor() {}
 
-  ngOnInit(): void {
-    this.inputId = generate();
-  }
+  ngOnInit(): void {}
 }
