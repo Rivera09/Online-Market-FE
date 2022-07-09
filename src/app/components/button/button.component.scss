@@ -1,0 +1,21 @@
+@import "component";
+
+.primary-btn {
+  background-color: $primary;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.outline-btn {
+  color: $white1;
+  border: 1.5px solid $white1;
+  padding: 15px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px 5px rgba(79, 73, 247, 0.25);
+  text-decoration: none;
+}
+
+.full-width {
+  width: 100%;
+}

@@ -4,3 +4,5 @@ export const LOGO_PATHS = {
   VARAINT_2: 'assets/images/logo3.png',
   VARAINT_3: 'assets/images/logo4.png',
 };
+
+export const LOGIN_IMG = 'assets/images/img-login.png';
