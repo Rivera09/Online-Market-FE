@@ -5,6 +5,9 @@ const ROUTES = {
   LOGIN: {
     ROOT: 'login',
   },
-};
+  REGISTER: {
+    ROOT: 'register',
+  },
+} as const;
 
 export default ROUTES;

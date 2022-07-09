@@ -25,15 +25,30 @@
 
     <p class="alternative-options-text">o prueba con</p>
 
-    <form>
-      <app-text-input labelText="Correo electrónico"></app-text-input>
-      <app-text-input
+    <form *ngIf="type === 'login'">
+      <app-form-input labelText="Correo electrónico"></app-form-input>
+      <app-form-input
         labelText="Contraseña"
         [bottomAction]="recoverPasswordBtnData"
-      ></app-text-input>
+      ></app-form-input>
       <app-button
         type="primary"
         text="Iniciar sesión"
+        [fullWidth]="true"
+      ></app-button>
+    </form>
+    <form *ngIf="type === 'register'">
+      <app-form-input labelText="Correo electrónico"></app-form-input>
+      <app-form-input labelText="Nombre completo"></app-form-input>
+      <app-form-input labelText="Contraseña"></app-form-input>
+      <app-form-input
+        type="switch"
+        labelText="Cuenta empresarial"
+      ></app-form-input>
+      <app-form-input labelText="Nombre de empresa"></app-form-input>
+      <app-button
+        type="primary"
+        text="Crear cuenta"
         [fullWidth]="true"
       ></app-button>
     </form>
