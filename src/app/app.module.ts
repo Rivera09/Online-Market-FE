@@ -10,7 +10,7 @@ import {
   TextInputComponent,
 } from './components/';
 import { AppComponent } from './app.component';
-import { LoginRegisterFormLayoutComponent } from './layouts/login-register-form-layout/login-register-form-layout.component';
+import { LoginRegisterFormComponent } from './layouts/login-register-form/login-register-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -19,7 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     LoginComponent,
     ButtonComponent,
-    LoginRegisterFormLayoutComponent,
+    LoginRegisterFormComponent,
     TextInputComponent,
     RegisterComponent,
     SwitchInputComponent,
