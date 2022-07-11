@@ -1,0 +1,11 @@
+<a
+  *ngIf="redirectTo"
+  routerLink="{{ redirectTo }}"
+  [ngClass]="classNames"
+  class="btn"
+>
+  {{ text }}
+</a>
+<button *ngIf="!redirectTo" [ngClass]="classNames" class="btn">
+  {{ text }}
+</button>

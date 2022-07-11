@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ROUTES } from '../../../contants';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  // logoPath: LOGO_PATHS.
+  loginRoute = ROUTES.LOGIN.ROOT;
+  registerRoute = ROUTES.REGISTER.ROOT;
 
   constructor() {}
 

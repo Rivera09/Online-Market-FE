@@ -7,7 +7,10 @@ const ROUTES = {
   },
   PLANSELECTION: {
     ROOT: 'plan-selection',
-  }
-};
+  },
+  REGISTER: {
+    ROOT: 'register',
+  },
+} as const;
 
 export default ROUTES;
