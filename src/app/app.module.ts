@@ -2,16 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
-import { HomeComponent, LoginComponent, RegisterComponent } from './pages';
+import {
+  HomeComponent,
+  LoginComponent,
+  RegisterComponent,
+  AdminComponent,
+} from './pages';
+import { LoginRegisterLayout, MainLayout } from './layouts';
 import {
   ButtonComponent,
   FormInputComponent,
   SwitchInputComponent,
   TextInputComponent,
+  SidebarComponent,
 } from './components/';
 import { AppComponent } from './app.component';
-import { LoginRegisterFormComponent } from './layouts/login-register-form/login-register-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +26,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     LoginComponent,
     ButtonComponent,
-    LoginRegisterFormComponent,
+    LoginRegisterLayout,
     TextInputComponent,
     RegisterComponent,
     SwitchInputComponent,
     FormInputComponent,
+    MainLayout,
+    AdminComponent,
+    SidebarComponent,
+    SidebarBtnComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

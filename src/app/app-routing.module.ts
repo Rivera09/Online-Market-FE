@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ROUTES } from 'src/contants';
-import { HomeComponent, LoginComponent, RegisterComponent } from './pages';
+import {
+  HomeComponent,
+  LoginComponent,
+  RegisterComponent,
+  AdminComponent,
+} from './pages';
 
 const routes: Routes = [
   {
@@ -10,6 +15,12 @@ const routes: Routes = [
   },
   { path: ROUTES.LOGIN.ROOT, component: LoginComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
+  {
+    path: ROUTES.ADMIN.ROOT,
+    component: AdminComponent,
+    // Cambiar Login component por la páina de usuarios
+    children: [{ path: ROUTES.ADMIN.USERS, component: LoginComponent }],
+  },
 ];
 
 @NgModule({

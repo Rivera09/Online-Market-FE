@@ -8,6 +8,11 @@ const ROUTES = {
   REGISTER: {
     ROOT: 'register',
   },
+  ADMIN: {
+    ROOT: 'admin',
+    USERS: 'users',
+    PLANS: 'plans',
+  },
 } as const;
 
 export default ROUTES;
