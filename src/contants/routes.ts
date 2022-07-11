@@ -5,6 +5,9 @@ const ROUTES = {
   LOGIN: {
     ROOT: 'login',
   },
+  PLANSELECTION: {
+    ROOT: 'plan-selection',
+  },
   REGISTER: {
     ROOT: 'register',
   },

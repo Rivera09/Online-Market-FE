@@ -1,3 +1,4 @@
+export { NavUserNoRegisterComponent } from './nav-user-no-register/nav-user-no-register.component';
 export { ButtonComponent } from './button/button.component';
 export { FormInputComponent } from './form-input/form-input.component';
 export { SwitchInputComponent } from './switch-input/switch-input.component';

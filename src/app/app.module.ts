@@ -7,6 +7,7 @@ import {
   LoginComponent,
   RegisterComponent,
   AdminComponent,
+  PlanSelectionComponent,
 } from './pages';
 import { LoginRegisterLayout, MainLayout } from './layouts';
 import {
@@ -15,6 +16,7 @@ import {
   SwitchInputComponent,
   TextInputComponent,
   SidebarComponent,
+  NavUserNoRegisterComponent,
 } from './components/';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -27,6 +29,8 @@ import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.compon
     LoginComponent,
     ButtonComponent,
     LoginRegisterLayout,
+    PlanSelectionComponent,
+    NavUserNoRegisterComponent,
     TextInputComponent,
     RegisterComponent,
     SwitchInputComponent,

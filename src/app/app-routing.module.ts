@@ -6,6 +6,7 @@ import {
   LoginComponent,
   RegisterComponent,
   AdminComponent,
+  PlanSelectionComponent,
 } from './pages';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   { path: ROUTES.LOGIN.ROOT, component: LoginComponent },
+  { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
   {
     path: ROUTES.ADMIN.ROOT,
