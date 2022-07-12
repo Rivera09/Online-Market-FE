@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LOGIN_IMG } from 'src/contants';
+import { AUTH_IMAGES } from 'src/contants';
 import {
   faFacebookF,
   faGoogle,
@@ -36,7 +36,7 @@ export class LoginRegisterFormLayoutComponent implements OnInit {
 
   ngOnInit(): void {
     const isLogin = this.type === 'login';
-    this.image = isLogin ? LOGIN_IMG : '';
+    this.image = isLogin ? AUTH_IMAGES.LOGIN : AUTH_IMAGES.REGISTER;
     this.redirectTo = `/${isLogin ? 'register' : 'login'}`;
     this.sidebarBtnText = isLogin ? 'Registrate' : 'Inicia sesión';
     this.sidebarTitle = isLogin ? '¿Nuevo aquí?' : 'Crea tu cuenta';

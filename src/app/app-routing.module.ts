@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ROUTES } from 'src/contants';
-import { HomeComponent, LoginComponent, RecoverPasswordComponent} from './pages';
+import {
+  HomeComponent,
+  LoginComponent,
+  PlanSelectionComponent,
+  RegisterComponent,
+  RecoverPasswordComponent,
+} from './pages';
 
 const routes: Routes = [
   {
@@ -9,11 +15,12 @@ const routes: Routes = [
     component: HomeComponent,
   },
   { path: ROUTES.LOGIN.ROOT, component: LoginComponent },
-  { 
-    path: ROUTES.RECOVER_PASSWORD.ROOT, 
-    component: RecoverPasswordComponent 
+  {
+    path: ROUTES.RECOVER_PASSWORD.ROOT,
+    component: RecoverPasswordComponent,
   },
-
+  { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
+  { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
 ];
 
 @NgModule({
