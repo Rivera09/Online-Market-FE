@@ -5,6 +5,9 @@ const ROUTES = {
   LOGIN: {
     ROOT: 'login',
   },
+  RECOVER_PASSWORD: {
+    ROOT: 'recover_password/:mode',
+  },
   PLANSELECTION: {
     ROOT: 'plan-selection',
   },

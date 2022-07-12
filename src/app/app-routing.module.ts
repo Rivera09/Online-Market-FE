@@ -6,6 +6,7 @@ import {
   LoginComponent,
   PlanSelectionComponent,
   RegisterComponent,
+  RecoverPasswordComponent,
 } from './pages';
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   { path: ROUTES.LOGIN.ROOT, component: LoginComponent },
+  {
+    path: ROUTES.RECOVER_PASSWORD.ROOT,
+    component: RecoverPasswordComponent,
+  },
   { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
 ];
