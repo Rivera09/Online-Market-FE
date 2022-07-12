@@ -17,7 +17,7 @@ import {
   FormInputComponent,
   SwitchInputComponent,
   TextInputComponent,
-  SidebarComponent
+  SidebarComponent,
   NavUserNoRegisterComponent,
 } from './components/';
 import { AppComponent } from './app.component';
