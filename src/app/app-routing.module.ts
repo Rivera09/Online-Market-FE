@@ -7,6 +7,7 @@ import {
   PlanSelectionComponent,
   RegisterComponent,
   RecoverPasswordComponent,
+  TemplateAdminComponent
 } from './pages';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   },
   { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
+  { path: ROUTES.tamplate.ROOT, component: TemplateAdminComponent }
 ];
 
 @NgModule({

@@ -19,6 +19,8 @@ import { AppComponent } from './app.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { LoginRegisterFormLayoutComponent } from './layouts/login-register-form-layout/login-register-form-layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TemplateAdminComponent } from './pages/template-admin/template-admin.component';
+import { ColumsTempladeComponent } from './components/colums-templade/colums-templade.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RegisterComponent,
     SwitchInputComponent,
     FormInputComponent,
+    TemplateAdminComponent,
+    ColumsTempladeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

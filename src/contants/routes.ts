@@ -14,6 +14,9 @@ const ROUTES = {
   REGISTER: {
     ROOT: 'register',
   },
+  tamplate: {
+    ROOT: 'template',
+  },
 } as const;
 
 export default ROUTES;

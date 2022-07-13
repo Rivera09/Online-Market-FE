@@ -1,0 +1,13 @@
+@import "component";
+
+.title-template{
+    @include headline-small-font;
+    color: $primary;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container{
+    margin: 10px 10px;
+    padding: 0px;
+}
