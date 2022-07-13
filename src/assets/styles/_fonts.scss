@@ -10,6 +10,13 @@
   line-height: 3.25rem;
 }
 
+@mixin title-large-font {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: 0.0015em;
+}
+
 @mixin title-medium-font {
   font-weight: 500;
   font-size: 1rem;

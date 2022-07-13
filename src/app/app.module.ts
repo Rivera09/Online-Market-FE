@@ -20,7 +20,6 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
 import { LoginRegisterFormLayoutComponent } from './layouts/login-register-form-layout/login-register-form-layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TemplateAdminComponent } from './pages/template-admin/template-admin.component';
-import { ColumsTempladeComponent } from './components/colums-templade/colums-templade.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,6 @@ import { ColumsTempladeComponent } from './components/colums-templade/colums-tem
     SwitchInputComponent,
     FormInputComponent,
     TemplateAdminComponent,
-    ColumsTempladeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
