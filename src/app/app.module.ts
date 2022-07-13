@@ -22,7 +22,6 @@ import {
 } from './components/';
 import { AppComponent } from './app.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
-import { LoginRegisterFormLayoutComponent } from './layouts/login-register-form-layout/login-register-form-layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.component';
 
