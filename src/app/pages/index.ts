@@ -4,3 +4,4 @@ export { RecoverPasswordComponent } from './recover-password/recover-password.co
 export { PlanSelectionComponent } from './plan-selection/plan-selection.component';
 export { RegisterComponent } from './register/register.component';
 export { TemplateAdminComponent } from './template-admin/template-admin.component'
+export { AdminComponent } from './admin/admin.component';

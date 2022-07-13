@@ -4,8 +4,9 @@ import { ROUTES } from 'src/contants';
 import {
   HomeComponent,
   LoginComponent,
-  PlanSelectionComponent,
   RegisterComponent,
+  AdminComponent,
+  PlanSelectionComponent,
   RecoverPasswordComponent,
   TemplateAdminComponent
 } from './pages';
@@ -22,7 +23,11 @@ const routes: Routes = [
   },
   { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
-  { path: ROUTES.tamplate.ROOT, component: TemplateAdminComponent }
+  {
+    path: ROUTES.ADMIN.ROOT,
+    component: AdminComponent,
+    children: [{ path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent }],
+  },
 ];
 
 @NgModule({

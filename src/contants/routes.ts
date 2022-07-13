@@ -14,8 +14,11 @@ const ROUTES = {
   REGISTER: {
     ROOT: 'register',
   },
-  tamplate: {
-    ROOT: 'template',
+  ADMIN: {
+    ROOT: 'admin',
+    USERS: 'users',
+    PLANS: 'plans',
+    TEMPLATE: 'template'
   },
 } as const;
 

@@ -8,9 +8,8 @@ describe('NavUserNoRegisterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavUserNoRegisterComponent ]
-    })
-    .compileComponents();
+      declarations: [NavUserNoRegisterComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavUserNoRegisterComponent);
     component = fixture.componentInstance;

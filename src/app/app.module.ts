@@ -6,20 +6,25 @@ import {
   HomeComponent,
   LoginComponent,
   RegisterComponent,
+  AdminComponent,
   PlanSelectionComponent,
 } from './pages';
+
+import { LoginRegisterLayout, MainLayout } from './layouts';
+
 import {
   ButtonComponent,
   FormInputComponent,
   SwitchInputComponent,
   TextInputComponent,
+  SidebarComponent,
   NavUserNoRegisterComponent,
 } from './components/';
 import { AppComponent } from './app.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
-import { LoginRegisterFormLayoutComponent } from './layouts/login-register-form-layout/login-register-form-layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TemplateAdminComponent } from './pages/template-admin/template-admin.component';
+import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +33,18 @@ import { TemplateAdminComponent } from './pages/template-admin/template-admin.co
     HomeComponent,
     LoginComponent,
     ButtonComponent,
+    LoginRegisterLayout,
     PlanSelectionComponent,
     NavUserNoRegisterComponent,
-    LoginRegisterFormLayoutComponent,
     TextInputComponent,
     RegisterComponent,
     SwitchInputComponent,
     FormInputComponent,
     TemplateAdminComponent,
+    MainLayout,
+    AdminComponent,
+    SidebarComponent,
+    SidebarBtnComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
