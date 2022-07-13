@@ -1,1 +1,2 @@
-export { LoginRegisterFormLayoutComponent as LRLayout } from './login-register-form-layout/login-register-form-layout.component';
+export { LoginRegisterFormComponent as LoginRegisterLayout } from './login-register-form/login-register-form.component';
+export { MainComponent as MainLayout } from './main/main.component';

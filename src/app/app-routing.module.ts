@@ -4,8 +4,9 @@ import { ROUTES } from 'src/contants';
 import {
   HomeComponent,
   LoginComponent,
-  PlanSelectionComponent,
   RegisterComponent,
+  AdminComponent,
+  PlanSelectionComponent,
   RecoverPasswordComponent,
 } from './pages';
 
@@ -21,6 +22,12 @@ const routes: Routes = [
   },
   { path: ROUTES.PLANSELECTION.ROOT, component: PlanSelectionComponent },
   { path: ROUTES.REGISTER.ROOT, component: RegisterComponent },
+  {
+    path: ROUTES.ADMIN.ROOT,
+    component: AdminComponent,
+    // Cambiar Login component por la páina de usuarios
+    children: [{ path: ROUTES.ADMIN.USERS, component: LoginComponent }],
+  },
 ];
 
 @NgModule({

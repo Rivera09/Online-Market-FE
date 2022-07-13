@@ -7,11 +7,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-login-register-form-layout',
-  templateUrl: './login-register-form-layout.component.html',
-  styleUrls: ['./login-register-form-layout.component.scss'],
+  selector: 'app-login-register-form',
+  templateUrl: './login-register-form.component.html',
+  styleUrls: ['./login-register-form.component.scss'],
 })
-export class LoginRegisterFormLayoutComponent implements OnInit {
+export class LoginRegisterFormComponent implements OnInit {
   @Input() type: 'login' | 'register' = 'login';
 
   facebookIcon = faFacebookF;
