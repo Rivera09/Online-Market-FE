@@ -15,6 +15,20 @@ const SIDEBAR_OPTIONS = [
     icon: 'list',
     roles: [USER_ROLES.ADMIN],
   },
+  {
+    id: 3,
+    label: 'Crear y editar plantillas',
+    route: ROUTES.ADMIN.TEMPLATE,
+    icon: 'feed',
+    roles: [USER_ROLES.ADMIN],
+  },
+  {
+    id: 4,
+    label: 'Carrito de Compras',
+    route: ROUTES.ADMIN.PLANS,
+    icon: 'list',
+    roles: [USER_ROLES.CUSTOMER],
+  },
 ] as const;
 
 export default SIDEBAR_OPTIONS;

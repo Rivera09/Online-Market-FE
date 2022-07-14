@@ -23,7 +23,12 @@ import {
 import { AppComponent } from './app.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TemplateAdminComponent } from './pages/template-admin/template-admin.component';
 import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.component';
+import { CustomerComponent } from './pages/customer/customer.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
+import { CardShoppingComponent } from './components/card-shopping/card-shopping.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,12 +44,16 @@ import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.compon
     RegisterComponent,
     SwitchInputComponent,
     FormInputComponent,
+    TemplateAdminComponent,
     MainLayout,
     AdminComponent,
     SidebarComponent,
     SidebarBtnComponent,
+    CustomerComponent,
+    ShoppingCartComponent,
+    CardShoppingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
