@@ -8,6 +8,7 @@ import {
   AdminComponent,
   PlanSelectionComponent,
   RecoverPasswordComponent,
+  TemplateAdminComponent
 } from './pages';
 
 const routes: Routes = [
@@ -25,8 +26,7 @@ const routes: Routes = [
   {
     path: ROUTES.ADMIN.ROOT,
     component: AdminComponent,
-    // Cambiar Login component por la páina de usuarios
-    children: [{ path: ROUTES.ADMIN.USERS, component: LoginComponent }],
+    children: [{ path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent }],
   },
 ];
 

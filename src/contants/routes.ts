@@ -18,6 +18,7 @@ const ROUTES = {
     ROOT: 'admin',
     USERS: 'users',
     PLANS: 'plans',
+    TEMPLATE: 'template'
   },
 } as const;
 
