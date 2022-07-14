@@ -5,6 +5,7 @@ type TUserRoles = keyof typeof USER_ROLES;
 
 const titles: Record<TUserRoles, string> = {
   ADMIN: 'Admin',
+  CUSTOMER: 'Customer',
 };
 
 @Component({
@@ -25,5 +26,7 @@ export class SidebarComponent implements OnInit {
     option.roles.includes(USER_ROLES[this.role])
   );
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  }
 }
