@@ -19,6 +19,10 @@ const ROUTES = {
     USERS: 'users',
     PLANS: 'plans',
   },
+  CUSTOMER: {
+    ROOT: 'customer',
+    SHOPPING:'shopping-cart'
+  }
 } as const;
 
 export default ROUTES;

@@ -7,3 +7,4 @@ export {
   RECOVER_PASSWORD,
   AUTH_IMAGES,
 } from './imagesPath';
+export { shopping  } from './interfaces'
