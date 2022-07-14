@@ -8,7 +8,9 @@ import {
   AdminComponent,
   PlanSelectionComponent,
   RecoverPasswordComponent,
-  TemplateAdminComponent
+  CustomerComponent,
+  ShoppingCartComponent,
+  TemplateAdminComponent,
 } from './pages';
 
 const routes: Routes = [
@@ -26,7 +28,16 @@ const routes: Routes = [
   {
     path: ROUTES.ADMIN.ROOT,
     component: AdminComponent,
-    children: [{ path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent }],
+    children: [
+      { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
+    ],
+  },
+  {
+    path: ROUTES.CUSTOMER.ROOT,
+    component: CustomerComponent,
+    children: [
+      { path: ROUTES.CUSTOMER.SHOPPING, component: ShoppingCartComponent },
+    ],
   },
 ];
 

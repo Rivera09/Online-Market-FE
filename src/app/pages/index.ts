@@ -5,3 +5,6 @@ export { PlanSelectionComponent } from './plan-selection/plan-selection.componen
 export { RegisterComponent } from './register/register.component';
 export { TemplateAdminComponent } from './template-admin/template-admin.component'
 export { AdminComponent } from './admin/admin.component';
+export { CustomerComponent } from './customer/customer.component';
+export { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+
