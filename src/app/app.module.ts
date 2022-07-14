@@ -23,6 +23,7 @@ import {
 import { AppComponent } from './app.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TemplateAdminComponent } from './pages/template-admin/template-admin.component';
 import { SidebarBtnComponent } from './components/sidebar-btn/sidebar-btn.component';
 import { CustomerComponent } from './pages/customer/customer.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
@@ -43,6 +44,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     SwitchInputComponent,
     FormInputComponent,
+    TemplateAdminComponent,
     MainLayout,
     AdminComponent,
     SidebarComponent,

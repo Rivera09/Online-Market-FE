@@ -16,6 +16,13 @@ const SIDEBAR_OPTIONS = [
     roles: [USER_ROLES.ADMIN],
   },
   {
+    id: 3,
+    label: 'Crear y editar plantillas',
+    route: ROUTES.ADMIN.TEMPLATE,
+    icon: 'feed',
+    roles: [USER_ROLES.ADMIN],
+  },
+  {
     id: 4,
     label: 'Carrito de Compras',
     route: ROUTES.ADMIN.PLANS,

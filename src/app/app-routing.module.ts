@@ -9,7 +9,8 @@ import {
   PlanSelectionComponent,
   RecoverPasswordComponent,
   CustomerComponent,
-  ShoppingCartComponent
+  ShoppingCartComponent,
+  TemplateAdminComponent,
 } from './pages';
 
 const routes: Routes = [
@@ -27,13 +28,16 @@ const routes: Routes = [
   {
     path: ROUTES.ADMIN.ROOT,
     component: AdminComponent,
-    // Cambiar Login component por la páina de usuarios
-    children: [{ path: ROUTES.ADMIN.USERS, component: LoginComponent }],
+    children: [
+      { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
+    ],
   },
   {
     path: ROUTES.CUSTOMER.ROOT,
     component: CustomerComponent,
-    children: [{ path: ROUTES.CUSTOMER.SHOPPING, component: ShoppingCartComponent }],
+    children: [
+      { path: ROUTES.CUSTOMER.SHOPPING, component: ShoppingCartComponent },
+    ],
   },
 ];
 

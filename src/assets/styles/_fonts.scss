@@ -13,7 +13,7 @@
 @mixin title-large-font {
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 28px;
+  line-height: 150%;
   letter-spacing: 0.0015em;
 }
 
@@ -31,8 +31,8 @@
   letter-spacing: 0.01em;
 }
 
-@mixin  headline-small-font{
+@mixin headline-small-font {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 36px;
-} 
+  font-size: 1.5rem;
+  line-height: 150%;
+}
