@@ -3,3 +3,7 @@ $white2: #fbf8f8;
 $primary: #6338e7;
 $softPurple: #d3c7ff;
 $purple2: #a990ff;
+$black: #000;
+
+$nav-height: 67px;
+$vh-no-nav: calc(100vh - #{$nav-height});
