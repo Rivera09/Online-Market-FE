@@ -10,8 +10,8 @@
                 <div>
                     
                     <form [formGroup]="productAmount">
-                        <label class="product-container-data-init">Cantidad:</label>
-                        <label class="product-container-data-init" *ngIf="type==='shoppingHistory'">{{product.amount}}</label>
+                        <label class="product-container-data-init">Cantidad:  </label>
+                        <label class="product-container-data-init" *ngIf="type==='shoppingHistory'"> {{product.amount}}</label>
                         <input [(ngModel)]="product.amount" *ngIf="type==='shoppingCard'" type="number" formControlName="amount">
                     </form>
                     
