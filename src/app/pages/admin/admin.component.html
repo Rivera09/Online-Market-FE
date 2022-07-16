@@ -1,3 +1,7 @@
 <app-main>
   <router-outlet></router-outlet>
+  <div *ngIf="isRootUrl" class="img-wrapper">
+    <img src="{{ welcomeImg }}" alt="welcome admin image" />
+    <h4>Bienvenido de vuelta (nombre admin)</h4>
+  </div>
 </app-main>
