@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dataSelect } from 'src/contants';
+import { dataSelect,CREATE_USER } from 'src/contants';
 
 @Component({
   selector: 'app-create-user',
@@ -8,6 +8,7 @@ import { dataSelect } from 'src/contants';
 })
 export class CreateUserComponent implements OnInit {
 
+  
   dataBusiness:dataSelect[]=[
     {
       option:"Americana",
@@ -37,9 +38,12 @@ export class CreateUserComponent implements OnInit {
       value:"3"
     }
   ]
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

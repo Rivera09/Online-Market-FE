@@ -1,6 +1,8 @@
 <div class="container-options">
     <h3 class="title">Crear usuario nuevo</h3>
 
+    <app-input-field></app-input-field>
+
     <app-form-input 
         type="text" 
         labelText="Nombre completo"
@@ -26,4 +28,13 @@
         name="business"
         [data]="dataBusiness">
     </app-form-input>
+</div>
+
+<div class="container-buttoms">
+    <div class="container-buttoms-options-1">
+        <app-button type="outline" text="Cancelar" [fullWidth]="true"></app-button>
+    </div>
+    <div class="container-buttoms-options-2">
+        <app-button type="primary" text="Crear" [fullWidth]="true"></app-button>
+    </div>
 </div>

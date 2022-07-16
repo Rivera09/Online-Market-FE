@@ -6,5 +6,6 @@ export {
   LOGIN_IMG,
   RECOVER_PASSWORD,
   AUTH_IMAGES,
+  CREATE_USER
 } from './imagesPath';
 export { shopping,dataSelect } from './interfaces'

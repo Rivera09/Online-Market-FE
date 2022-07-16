@@ -31,6 +31,7 @@ import { CardShoppingComponent } from './components/card-shopping/card-shopping.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateUserComponent } from './pages/create-user/create-user.component';
 import { SelectInputComponent } from './components/select-input/select-input.component';
+import { InputFieldComponent } from './components/input-field/input-field.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { SelectInputComponent } from './components/select-input/select-input.com
     CardShoppingComponent,
     CreateUserComponent,
     SelectInputComponent,
+    InputFieldComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],
   providers: [],
