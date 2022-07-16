@@ -29,6 +29,7 @@ import { CustomerComponent } from './pages/customer/customer.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { CardShoppingComponent } from './components/card-shopping/card-shopping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShoppingHistoryComponent } from './pages/shopping-history/shopping-history.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CustomerComponent,
     ShoppingCartComponent,
     CardShoppingComponent,
+    ShoppingHistoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],
   providers: [],

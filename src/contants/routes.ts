@@ -22,7 +22,8 @@ const ROUTES = {
   },
   CUSTOMER: {
     ROOT: 'customer',
-    SHOPPING:'shopping-cart'
+    SHOPPING:'shopping-cart',
+    HISTORY:'shopping-history'
   }
 } as const;
 

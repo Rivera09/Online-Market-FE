@@ -8,15 +8,17 @@
     margin-bottom: 10px;
     display: flex;
     &-name{
-        @include label-large-font;
+        @include title-medium-font;
         color: $purple3;
+        margin: 0px;
     }
     &-data{
         display: flex;
         justify-content: space-between;
         &-init{
-            @include headline-small-font;
+            @include title-medium-font;
             color: $purple2;
+            margin: 0px
         }
         &-price{
             @include label-large-font;
