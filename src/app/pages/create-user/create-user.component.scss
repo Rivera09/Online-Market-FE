@@ -1,0 +1,12 @@
+@import "component";
+
+.container-options{
+    width:45%;
+    margin-left: auto;
+    margin-right: auto;
+    .title{
+        @include display-small-font;
+        color: $purple3;
+        text-align: center;
+    }
+}

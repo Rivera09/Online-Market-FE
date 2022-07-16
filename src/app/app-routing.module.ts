@@ -11,6 +11,7 @@ import {
   CustomerComponent,
   ShoppingCartComponent,
   TemplateAdminComponent,
+  CreateUserComponent
 } from './pages';
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
+      { path: ROUTES.ADMIN.USERS, component: CreateUserComponent },
     ],
   },
   {

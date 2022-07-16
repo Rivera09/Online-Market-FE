@@ -1,0 +1,29 @@
+<div class="container-options">
+    <h3 class="title">Crear usuario nuevo</h3>
+
+    <app-form-input 
+        type="text" 
+        labelText="Nombre completo"
+        name="nameComplete">
+    </app-form-input>
+
+    <app-form-input 
+        type="text" 
+        labelText="Correo electronico"
+        name="email">
+    </app-form-input>
+
+    <app-form-input 
+        type="select" 
+        labelText="Tipo de usuario"
+        name="typeUser"
+        [data]="dataUserType">
+    </app-form-input>
+
+    <app-form-input 
+        type="select" 
+        labelText="Empresa"
+        name="business"
+        [data]="dataBusiness">
+    </app-form-input>
+</div>

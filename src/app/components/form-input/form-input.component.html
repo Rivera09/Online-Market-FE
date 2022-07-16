@@ -14,4 +14,10 @@
   >
     {{ bottomAction.text }}
   </button>
+  <app-select-input
+    *ngIf="type === 'select'"
+    inputId="{{ inputId }}"
+    name="{{ name }}"
+    [data]="data"
+  ></app-select-input>
 </div>

@@ -29,6 +29,8 @@ import { CustomerComponent } from './pages/customer/customer.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { CardShoppingComponent } from './components/card-shopping/card-shopping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateUserComponent } from './pages/create-user/create-user.component';
+import { SelectInputComponent } from './components/select-input/select-input.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CustomerComponent,
     ShoppingCartComponent,
     CardShoppingComponent,
+    CreateUserComponent,
+    SelectInputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],
   providers: [],
