@@ -11,8 +11,8 @@ import {
   CustomerComponent,
   ShoppingCartComponent,
   TemplateAdminComponent,
-  CreateUserComponent
-  ShoppingHistoryComponent
+  CreateUserComponent,
+  ShoppingHistoryComponent,
 } from './pages';
 
 const routes: Routes = [
