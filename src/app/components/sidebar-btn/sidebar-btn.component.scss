@@ -2,7 +2,7 @@
 
 a {
   text-decoration: none;
-  
+
   li {
     padding: 16px;
     display: flex;
@@ -13,7 +13,8 @@ a {
     transition: 0.35s;
     gap: 12px;
 
-    &:hover {
+    &:hover,
+    &.is-active {
       background-color: $primary;
       color: $white1;
     }
