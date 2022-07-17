@@ -12,6 +12,7 @@ import {
   ShoppingCartComponent,
   TemplateAdminComponent,
   CreateUserComponent
+  ShoppingHistoryComponent
 } from './pages';
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
     component: CustomerComponent,
     children: [
       { path: ROUTES.CUSTOMER.SHOPPING, component: ShoppingCartComponent },
+      { path: ROUTES.CUSTOMER.HISTORY, component: ShoppingHistoryComponent },
     ],
   },
 ];

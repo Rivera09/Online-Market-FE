@@ -32,6 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateUserComponent } from './pages/create-user/create-user.component';
 import { SelectInputComponent } from './components/select-input/select-input.component';
 import { InputFieldComponent } from './components/input-field/input-field.component';
+import { ShoppingHistoryComponent } from './pages/shopping-history/shopping-history.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { InputFieldComponent } from './components/input-field/input-field.compon
     CreateUserComponent,
     SelectInputComponent,
     InputFieldComponent,
+    ShoppingHistoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],
   providers: [],

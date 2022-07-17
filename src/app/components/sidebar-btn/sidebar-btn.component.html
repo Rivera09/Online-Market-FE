@@ -1,1 +1,6 @@
-<p>sidebar-btn works!</p>
+<a *ngIf="optionItem" routerLink="{{ optionItem.route }}">
+  <li>
+    <span class="material-icons">{{ optionItem.icon }}</span>
+    <p>{{ optionItem.label }}</p>
+  </li>
+</a>

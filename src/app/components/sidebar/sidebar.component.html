@@ -1,1 +1,9 @@
-<p>sidebar works!</p>
+<aside>
+  <h4>{{ title }}</h4>
+  <ul>
+    <app-sidebar-btn
+      *ngFor="let option of options"
+      [optionItem]="option"
+    ></app-sidebar-btn>
+  </ul>
+</aside>

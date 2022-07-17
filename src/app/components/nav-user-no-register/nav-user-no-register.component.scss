@@ -1,5 +1,7 @@
+@import "component";
+
 #nav-no-register {
-  height: 67px;
+  height: $nav-height;
   background: #7d58ff;
   .logo-nav {
     height: -webkit-fill-available;

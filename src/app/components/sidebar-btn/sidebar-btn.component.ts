@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SIDEBAR_OPTIONS } from 'src/contants';
 
 @Component({
   selector: 'app-sidebar-btn',
   templateUrl: './sidebar-btn.component.html',
-  styleUrls: ['./sidebar-btn.component.scss']
+  styleUrls: ['./sidebar-btn.component.scss'],
 })
 export class SidebarBtnComponent implements OnInit {
+  @Input() optionItem: typeof SIDEBAR_OPTIONS[number] | undefined;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,0 +1,21 @@
+@import "component";
+
+aside {
+  width: 300px;
+  height: $vh-no-nav;
+  box-shadow: 0 1px 5px 1px transparentize($black, 0.2);
+  background-color: #fff;
+  padding: 27px 12px;
+
+  h4 {
+    @include title-large-font;
+    color: $primary;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
