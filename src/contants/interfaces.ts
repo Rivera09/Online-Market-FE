@@ -6,3 +6,8 @@ export interface shopping{
     imageRute:string,
     date:string,
 }
+
+export interface dataSelect{
+    value:string,
+    option:string
+}

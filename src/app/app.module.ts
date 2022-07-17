@@ -29,6 +29,9 @@ import { CustomerComponent } from './pages/customer/customer.component';
 import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 import { CardShoppingComponent } from './components/card-shopping/card-shopping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateUserComponent } from './pages/create-user/create-user.component';
+import { SelectInputComponent } from './components/select-input/select-input.component';
+import { InputFieldComponent } from './components/input-field/input-field.component';
 import { ShoppingHistoryComponent } from './pages/shopping-history/shopping-history.component';
 
 @NgModule({
@@ -53,6 +56,9 @@ import { ShoppingHistoryComponent } from './pages/shopping-history/shopping-hist
     CustomerComponent,
     ShoppingCartComponent,
     CardShoppingComponent,
+    CreateUserComponent,
+    SelectInputComponent,
+    InputFieldComponent,
     ShoppingHistoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule,FormsModule, ReactiveFormsModule],

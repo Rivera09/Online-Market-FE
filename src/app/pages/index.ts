@@ -7,5 +7,5 @@ export { TemplateAdminComponent } from './template-admin/template-admin.componen
 export { AdminComponent } from './admin/admin.component';
 export { CustomerComponent } from './customer/customer.component';
 export { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+export { CreateUserComponent } from './create-user/create-user.component';
 export { ShoppingHistoryComponent } from './shopping-history/shopping-history.component';
-
