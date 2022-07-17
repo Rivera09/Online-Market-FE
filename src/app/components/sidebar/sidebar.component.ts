@@ -1,11 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SIDEBAR_OPTIONS, USER_ROLES } from 'src/contants';
-
-type TUserRoles = keyof typeof USER_ROLES;
+import { SIDEBAR_OPTIONS, TUserRoles, TSidebarOption } from 'contants';
 
 const titles: Record<TUserRoles, string> = {
-  ADMIN: 'Admin',
-  CUSTOMER: 'Customer',
+  admin: 'Admin',
+  customer: 'Customer',
 };
 
 @Component({
@@ -14,19 +12,19 @@ const titles: Record<TUserRoles, string> = {
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
-  @Input() role: TUserRoles = 'ADMIN';
-  title = titles[this.role];
+  @Input() role: TUserRoles = 'admin';
+  title: string = '';
 
   constructor() {}
   /**
    * Una vez conectado con la API,
    * se debe filtrar con el role del usuario
    */
-  options = SIDEBAR_OPTIONS.filter((option) =>
-    option.roles.includes(USER_ROLES[this.role])
-  );
+  options: TSidebarOption[] | undefined;
 
   ngOnInit(): void {
-    
+    this.options = SIDEBAR_OPTIONS.filter((option) =>
+      option.roles.includes(this.role)
+    );
   }
 }

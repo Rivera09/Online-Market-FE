@@ -1,6 +1,6 @@
-import { ROUTES, USER_ROLES } from './';
+import { ROUTES, USER_ROLES, TSidebarOption } from './';
 
-const SIDEBAR_OPTIONS = [
+const SIDEBAR_OPTIONS: TSidebarOption[] = [
   {
     id: 1,
     label: 'Usuarios',
@@ -29,6 +29,6 @@ const SIDEBAR_OPTIONS = [
     icon: 'list',
     roles: [USER_ROLES.CUSTOMER],
   },
-] as const;
+];
 
 export default SIDEBAR_OPTIONS;
