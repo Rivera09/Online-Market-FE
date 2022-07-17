@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { shopping } from 'src/contants';
+import { shopping } from 'contants';
 
 @Component({
   selector: 'app-shopping-cart',

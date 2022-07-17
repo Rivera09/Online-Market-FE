@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CREATE_USER } from 'src/contants';
+import { CREATE_USER } from 'contants';
 
 @Component({
   selector: 'app-input-field',

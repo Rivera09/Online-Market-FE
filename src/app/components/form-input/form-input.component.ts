@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { generate } from 'shortid';
-import { dataSelect } from 'src/contants';
+import { dataSelect } from 'contants';
 
 @Component({
   selector: 'app-form-input',

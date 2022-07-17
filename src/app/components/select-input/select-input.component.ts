@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import { dataSelect } from 'src/contants';
+import { dataSelect } from 'contants';
 
 @Component({
   selector: 'app-select-input',

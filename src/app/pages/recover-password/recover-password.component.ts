@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { RECOVER_PASSWORD } from 'src/contants';
+import { RECOVER_PASSWORD } from 'contants';
 
 @Component({
   selector: 'app-recover-password',

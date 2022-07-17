@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ROUTES } from 'src/contants';
-import {
+import { ROUTES } from 'contants';
+import { pagesObj } from '@pages';
+
+const {
+  AdminComponent,
+  CustomerComponent,
   HomeComponent,
   LoginComponent,
-  RegisterComponent,
-  AdminComponent,
   PlanSelectionComponent,
   RecoverPasswordComponent,
-  CustomerComponent,
+  RegisterComponent,
   ShoppingCartComponent,
-  TemplateAdminComponent,
-  CreateUserComponent,
   ShoppingHistoryComponent,
-} from './pages';
+  TemplateAdminComponent,
+  UsersListComponent,
+  CreateUserComponent,
+} = pagesObj;
 
 const routes: Routes = [
   {
@@ -32,6 +35,7 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
+      { path: ROUTES.ADMIN.USERS, component: UsersListComponent },
       { path: ROUTES.ADMIN.USERS, component: CreateUserComponent },
     ],
   },

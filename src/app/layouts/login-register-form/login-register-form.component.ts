@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AUTH_IMAGES } from 'src/contants';
+import { AUTH_IMAGES } from 'contants';
 import {
   faFacebookF,
   faGoogle,

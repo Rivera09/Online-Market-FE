@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dataSelect } from 'src/contants';
+import { dataSelect } from 'contants';
 
 @Component({
   selector: 'app-create-user',
