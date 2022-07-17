@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dataSelect,CREATE_USER } from 'src/contants';
+import { dataSelect } from 'src/contants';
 
 @Component({
   selector: 'app-create-user',
@@ -26,15 +26,15 @@ export class CreateUserComponent implements OnInit {
 
   dataUserType:dataSelect[]=[
     {
-      option:"Sobrecargo",
+      option:"Cliente",
       value:"1"
     },
     {
-      option:"Gerente",
+      option:"Empresa",
       value:"2"
     },
     {
-      option:"Oficinista",
+      option:"Administrador",
       value:"3"
     }
   ]
@@ -44,6 +44,15 @@ export class CreateUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ru:string="0"
+  rb:string="0"
 
+  receiveUserType(event:any) {
+    this.ru = event
+  }
+
+  receiveBusiness(event:any) {
+    this.rb = event
+  }
 
 }

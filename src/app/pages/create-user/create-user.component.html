@@ -19,14 +19,17 @@
         type="select" 
         labelText="Tipo de usuario"
         name="typeUser"
-        [data]="dataUserType">
+        [data]="dataUserType" 
+        (itemSelect)="receiveUserType($event)">
     </app-form-input>
 
     <app-form-input 
+        *ngIf="ru == '2'"
         type="select" 
         labelText="Empresa"
         name="business"
-        [data]="dataBusiness">
+        [data]="dataBusiness"
+        (itemSelect)="receiveUserType($event)">
     </app-form-input>
 </div>
 

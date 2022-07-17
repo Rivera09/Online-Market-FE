@@ -6,3 +6,5 @@ export { TextInputComponent } from './text-input/text-input.component';
 export { SidebarComponent } from './sidebar/sidebar.component';
 export { CardShoppingComponent } from './card-shopping/card-shopping.component'
 export { InputFieldComponent } from './input-field/input-field.component'
+export { SelectInputComponent } from './select-input/select-input.component'
+

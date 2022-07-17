@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { dataSelect } from 'src/contants';
 
 @Component({
@@ -10,7 +10,15 @@ export class SelectInputComponent implements OnInit {
   @Input() inputId: string = '';
   @Input() name: string = '';
   @Input() data: dataSelect[]=[]
+  @Output() itemSelect = new EventEmitter<string>();
+  
+  content={
+    id:"0"
+  }
 
+  changeSelect(){
+    this.itemSelect.emit( this.content.id )
+  }
   constructor() { }
 
   ngOnInit(): void {

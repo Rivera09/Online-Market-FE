@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { generate } from 'shortid';
 import { dataSelect } from 'src/contants';
 
@@ -13,9 +13,14 @@ export class FormInputComponent implements OnInit {
   @Input() labelText = '';
   @Input() name: string = '';
   @Input() bottomAction: { text: string; action: () => void } | undefined;
+  @Output() itemSelect=new EventEmitter<string>();
 
   inputId = '';
 
+  dataEmitter(event:string){
+    this.itemSelect.emit(event)
+  }
+  
   constructor() {}
 
   ngOnInit(): void {

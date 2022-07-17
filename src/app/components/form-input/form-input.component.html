@@ -19,5 +19,6 @@
     inputId="{{ inputId }}"
     name="{{ name }}"
     [data]="data"
+    (itemSelect)="dataEmitter($event)"
   ></app-select-input>
 </div>
