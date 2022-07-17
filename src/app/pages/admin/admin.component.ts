@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ROUTES, WELCOME_IMAGES } from 'src/contants';
+import { ROUTES, WELCOME_IMAGES } from 'contants';
 
 @Component({
   selector: 'app-admin',

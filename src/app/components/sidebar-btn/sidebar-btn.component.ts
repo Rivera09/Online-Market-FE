@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SIDEBAR_OPTIONS } from 'src/contants';
+import { SIDEBAR_OPTIONS } from 'contants';
 
 @Component({
   selector: 'app-sidebar-btn',

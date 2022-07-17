@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { shopping } from 'src/contants';
+import { shopping } from 'contants';
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 
 @Component({

@@ -1,11 +1,39 @@
-export { HomeComponent } from './home/home.component';
-export { LoginComponent } from './login/login.component';
-export { RecoverPasswordComponent } from './recover-password/recover-password.component'
-export { PlanSelectionComponent } from './plan-selection/plan-selection.component';
-export { RegisterComponent } from './register/register.component';
-export { TemplateAdminComponent } from './template-admin/template-admin.component'
-export { AdminComponent } from './admin/admin.component';
-export { CustomerComponent } from './customer/customer.component';
-export { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-export { ShoppingHistoryComponent } from './shopping-history/shopping-history.component';
+import { HomeComponent } from '@pages/home/home.component';
+import { LoginComponent } from '@pages/login/login.component';
+import { RecoverPasswordComponent } from '@pages/recover-password/recover-password.component';
+import { PlanSelectionComponent } from '@pages/plan-selection/plan-selection.component';
+import { RegisterComponent } from '@pages/register/register.component';
+import { TemplateAdminComponent } from '@pages/template-admin/template-admin.component';
+import { AdminComponent } from '@pages/admin/admin.component';
+import { CustomerComponent } from '@pages/customer/customer.component';
+import { ShoppingCartComponent } from '@pages/shopping-cart/shopping-cart.component';
+import { ShoppingHistoryComponent } from '@pages/shopping-history/shopping-history.component';
+import { UsersListComponent } from '@pages/users-list/users-list.component';
 
+export const pagesObj = {
+  HomeComponent,
+  LoginComponent,
+  RecoverPasswordComponent,
+  PlanSelectionComponent,
+  RegisterComponent,
+  TemplateAdminComponent,
+  AdminComponent,
+  CustomerComponent,
+  ShoppingCartComponent,
+  ShoppingHistoryComponent,
+  UsersListComponent,
+};
+
+export const pagesList = [
+  HomeComponent,
+  LoginComponent,
+  RecoverPasswordComponent,
+  PlanSelectionComponent,
+  RegisterComponent,
+  TemplateAdminComponent,
+  AdminComponent,
+  CustomerComponent,
+  ShoppingCartComponent,
+  ShoppingHistoryComponent,
+  UsersListComponent,
+];
