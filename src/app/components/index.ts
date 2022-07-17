@@ -7,6 +7,8 @@ import { SidebarComponent } from '@components/sidebar/sidebar.component';
 import { CardShoppingComponent } from '@components/card-shopping/card-shopping.component';
 import { CardComponent } from '@components/card/card.component';
 import { SidebarBtnComponent } from '@components/sidebar-btn/sidebar-btn.component';
+import { InputFieldComponent } from './input-field/input-field.component';
+import { SelectInputComponent } from './select-input/select-input.component';
 
 export default [
   NavUserNoRegisterComponent,
@@ -18,4 +20,6 @@ export default [
   CardComponent,
   CardShoppingComponent,
   SidebarBtnComponent,
+  InputFieldComponent,
+  SelectInputComponent,
 ];

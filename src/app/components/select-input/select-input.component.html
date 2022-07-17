@@ -1,0 +1,12 @@
+<div class="form-input-wrapper">
+    <select #device  [(ngModel)]="content.id" 
+        (change)="changeSelect()" 
+        id="{{ inputId }}" 
+        name="{{ name }}" 
+        class="text-input">
+        <option value="{{item.value}}" 
+            *ngFor="let item of data">
+            {{item.option}}
+        </option>
+    </select>
+</div>

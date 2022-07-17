@@ -1,14 +1,5 @@
 import { USER_ROLES } from './';
 
-export interface shopping {
-  nameProduct: string;
-  price: string;
-  idProduct: number;
-  amount: number;
-  imageRute: string;
-  date: string;
-}
-
 export type TUserRoles = typeof USER_ROLES[keyof typeof USER_ROLES];
 
 export type TSidebarOption = {
@@ -26,3 +17,16 @@ export type TUser = {
   company?: string;
   picture?: string;
 };
+export interface shopping {
+  nameProduct: string;
+  price: string;
+  idProduct: number;
+  amount: number;
+  imageRute: string;
+  date: string;
+}
+
+export interface dataSelect {
+  value: string;
+  option: string;
+}

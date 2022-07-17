@@ -14,6 +14,7 @@ export const AUTH_IMAGES = {
   LOGIN: baseUrl + 'img-login.png',
   REGISTER: baseUrl + 'img-register.png',
 } as const;
+export const CREATE_USER = 'assets/images/User.png';
 
 export const WELCOME_IMAGES = {
   ADMIN: baseUrl + 'welcome-admin.png',

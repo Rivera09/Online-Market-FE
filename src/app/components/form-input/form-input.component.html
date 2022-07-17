@@ -14,4 +14,11 @@
   >
     {{ bottomAction.text }}
   </button>
+  <app-select-input
+    *ngIf="type === 'select'"
+    inputId="{{ inputId }}"
+    name="{{ name }}"
+    [data]="data"
+    (itemSelect)="dataEmitter($event)"
+  ></app-select-input>
 </div>

@@ -15,6 +15,7 @@ const {
   ShoppingHistoryComponent,
   TemplateAdminComponent,
   UsersListComponent,
+  CreateUserComponent,
 } = pagesObj;
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
     children: [
       { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
       { path: ROUTES.ADMIN.USERS, component: UsersListComponent },
+      { path: ROUTES.ADMIN.USERS, component: CreateUserComponent },
     ],
   },
   {

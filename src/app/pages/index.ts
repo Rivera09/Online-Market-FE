@@ -9,6 +9,7 @@ import { CustomerComponent } from '@pages/customer/customer.component';
 import { ShoppingCartComponent } from '@pages/shopping-cart/shopping-cart.component';
 import { ShoppingHistoryComponent } from '@pages/shopping-history/shopping-history.component';
 import { UsersListComponent } from '@pages/users-list/users-list.component';
+import { CreateUserComponent } from '@pages/create-user/create-user.component';
 
 export const pagesObj = {
   HomeComponent,
@@ -22,6 +23,7 @@ export const pagesObj = {
   ShoppingCartComponent,
   ShoppingHistoryComponent,
   UsersListComponent,
+  CreateUserComponent,
 };
 
 export const pagesList = [
@@ -36,4 +38,5 @@ export const pagesList = [
   ShoppingCartComponent,
   ShoppingHistoryComponent,
   UsersListComponent,
+  CreateUserComponent,
 ];
