@@ -12,3 +12,7 @@ export const AUTH_IMAGES = {
   LOGIN: 'assets/images/img-login.png',
   REGISTER: 'assets/images/img-register.png',
 } as const;
+
+export const WELCOME_IMAGES = {
+  ADMIN: 'assets/images/welcome-admin.png',
+};
