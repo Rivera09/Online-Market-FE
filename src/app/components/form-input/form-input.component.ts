@@ -9,18 +9,19 @@ import { dataSelect } from 'contants';
 })
 export class FormInputComponent implements OnInit {
   @Input() type: 'text' | 'switch' | 'select' = 'text';
-  @Input() data: dataSelect[]=[]
+  @Input() data: dataSelect[] = [];
   @Input() labelText = '';
   @Input() name: string = '';
   @Input() bottomAction: { text: string; action: () => void } | undefined;
-  @Output() itemSelect=new EventEmitter<string>();
+  @Input() change: ((e: any) => void) | undefined;
+  @Output() itemSelect = new EventEmitter<string>();
 
   inputId = '';
 
-  dataEmitter(event:string){
-    this.itemSelect.emit(event)
+  dataEmitter(event: string) {
+    this.itemSelect.emit(event);
   }
-  
+
   constructor() {}
 
   ngOnInit(): void {

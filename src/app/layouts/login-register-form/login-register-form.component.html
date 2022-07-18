@@ -2,11 +2,14 @@
   <div class="side-seciton">
     <h3>{{ sidebarTitle }}</h3>
     <img src="{{ image }}" alt="login image" />
-    <app-button
-      type="outline"
-      text="{{ sidebarBtnText }}"
-      redirectTo="{{ redirectTo }}"
-    ></app-button>
+    <div class="side-section-btn-wrapper">
+      <app-button
+        type="outline"
+        text="{{ sidebarBtnText }}"
+        redirectTo="{{ redirectTo }}"
+        [fullWidth]="true"
+      ></app-button>
+    </div>
   </div>
   <main class="login-register-container">
     <h4>{{ title }}</h4>
@@ -25,32 +28,6 @@
 
     <p class="alternative-options-text">o prueba con</p>
 
-    <form *ngIf="type === 'login'">
-      <app-form-input labelText="Correo electrónico"></app-form-input>
-      <app-form-input
-        labelText="Contraseña"
-        [bottomAction]="recoverPasswordBtnData"
-      ></app-form-input>
-      <app-button
-        type="primary"
-        text="Iniciar sesión"
-        [fullWidth]="true"
-      ></app-button>
-    </form>
-    <form *ngIf="type === 'register'">
-      <app-form-input labelText="Correo electrónico"></app-form-input>
-      <app-form-input labelText="Nombre completo"></app-form-input>
-      <app-form-input labelText="Contraseña"></app-form-input>
-      <app-form-input
-        type="switch"
-        labelText="Cuenta empresarial"
-      ></app-form-input>
-      <app-form-input labelText="Nombre de empresa"></app-form-input>
-      <app-button
-        type="primary"
-        text="Crear cuenta"
-        [fullWidth]="true"
-      ></app-button>
-    </form>
+    <ng-content></ng-content>
   </main>
 </div>

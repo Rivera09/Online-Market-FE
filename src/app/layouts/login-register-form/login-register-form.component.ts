@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AUTH_IMAGES } from 'contants';
+import { Router } from '@angular/router';
+import { AUTH_IMAGES, ROUTES } from 'contants';
 import {
   faFacebookF,
   faGoogle,
@@ -24,13 +25,6 @@ export class LoginRegisterFormComponent implements OnInit {
   sidebarTitle = '';
   title = '';
   actionBtnText = '';
-
-  recoverPasswordBtnData = {
-    text: '¿Olvidaste tu contraseña?',
-    action: () => {
-      console.log('recover');
-    },
-  };
 
   constructor() {}
 

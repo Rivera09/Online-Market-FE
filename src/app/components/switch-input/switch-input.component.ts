@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SwitchInputComponent implements OnInit {
   @Input() inputId: string = '';
   @Input() name: string = '';
+  @Input() change: ((e: any) => void) | undefined;
 
   constructor() {}
 

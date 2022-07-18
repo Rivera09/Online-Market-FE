@@ -27,6 +27,11 @@
       @include display-large-font;
       color: $white2;
     }
+
+    .side-section-btn-wrapper{
+      width: 200px;
+      height: 50px;
+    }
   }
 
   .login-register-container {
@@ -68,11 +73,5 @@
       margin-bottom: 64px;
     }
 
-    form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
   }
 }

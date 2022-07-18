@@ -36,7 +36,10 @@ const routes: Routes = [
     children: [
       { path: ROUTES.ADMIN.TEMPLATE, component: TemplateAdminComponent },
       { path: ROUTES.ADMIN.USERS, component: UsersListComponent },
-      { path: ROUTES.ADMIN.USERS, component: CreateUserComponent },
+      {
+        path: `${ROUTES.ADMIN.USERS}/${ROUTES.ADMIN.CREATE_USER}`,
+        component: CreateUserComponent,
+      },
     ],
   },
   {

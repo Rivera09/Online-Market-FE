@@ -8,7 +8,7 @@ type btnClassNames = 'primary-btn' | 'outline-btn' | 'full-width';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() type: 'primary' | 'secundary' | 'outline' | '' = '';
+  @Input() type: 'primary' | 'secondary' | 'outline' | '' = '';
   @Input() text = '';
   @Input() redirectTo = '';
   @Input() fullWidth = false;

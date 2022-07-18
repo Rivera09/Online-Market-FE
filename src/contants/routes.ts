@@ -17,14 +17,15 @@ const ROUTES = {
   ADMIN: {
     ROOT: 'admin',
     USERS: 'users',
+    CREATE_USER: 'create-user',
     PLANS: 'plans',
-    TEMPLATE: 'template'
+    TEMPLATE: 'template',
   },
   CUSTOMER: {
     ROOT: 'customer',
-    SHOPPING:'shopping-cart',
-    HISTORY:'shopping-history'
-  }
+    SHOPPING: 'shopping-cart',
+    HISTORY: 'shopping-history',
+  },
 } as const;
 
 export default ROUTES;

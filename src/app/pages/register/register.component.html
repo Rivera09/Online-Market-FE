@@ -1,1 +1,18 @@
-<app-login-register-form type="register"></app-login-register-form>
+<app-login-register-form type="register">
+  <form>
+    <app-form-input labelText="Correo electrónico"></app-form-input>
+    <app-form-input labelText="Nombre completo"></app-form-input>
+    <app-form-input labelText="Contraseña"></app-form-input>
+    <app-form-input
+      type="switch"
+      labelText="Cuenta empresarial"
+    ></app-form-input>
+    <app-form-input labelText="Nombre de empresa"></app-form-input>
+    <app-button
+      type="primary"
+      text="Crear cuenta"
+      redirectTo="{{ registerUrl }}"
+      [fullWidth]="true"
+    ></app-button>
+  </form>
+</app-login-register-form>

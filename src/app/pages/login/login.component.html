@@ -1,1 +1,17 @@
-<app-login-register-form></app-login-register-form>
+<app-login-register-form>
+  <form>
+    <app-form-input labelText="Correo electrónico"></app-form-input>
+    <app-form-input
+      labelText="Contraseña"
+      [bottomAction]="recoverPasswordBtnData"
+    ></app-form-input>
+    <div class="btn-wrapper">
+      <app-button
+        type="primary"
+        text="Iniciar sesión"
+        [fullWidth]="true"
+        redirectTo="{{ loginUrl }}"
+      ></app-button>
+    </div>
+  </form>
+</app-login-register-form>
