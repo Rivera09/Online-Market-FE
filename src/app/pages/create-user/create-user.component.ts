@@ -46,6 +46,10 @@ export class CreateUserComponent implements OnInit {
   ru: string = '0';
   rb: string = '0';
 
+  createUser() {
+    console.log('create');
+  }
+
   receiveUserType(event: any) {
     this.ru = event;
   }

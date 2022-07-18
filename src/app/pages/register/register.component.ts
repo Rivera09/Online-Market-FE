@@ -12,9 +12,5 @@ export class RegisterComponent implements OnInit {
   showCompanyNameInput = false;
   registerUrl = `/${ROUTES.PLANSELECTION.ROOT}`;
 
-  handleChange = (val: any) => {
-    console.log(val);
-  };
-
   ngOnInit(): void {}
 }

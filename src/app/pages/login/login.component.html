@@ -1,6 +1,9 @@
 <app-login-register-form>
   <form>
-    <app-form-input labelText="Correo electrónico"></app-form-input>
+    <app-form-input
+      labelText="Correo electrónico"
+      (inputValueChange)="re($event)"
+    ></app-form-input>
     <app-form-input
       labelText="Contraseña"
       [bottomAction]="recoverPasswordBtnData"
@@ -10,7 +13,7 @@
         type="primary"
         text="Iniciar sesión"
         [fullWidth]="true"
-        redirectTo="{{ loginUrl }}"
+        [onClick]="login"
       ></app-button>
     </div>
   </form>

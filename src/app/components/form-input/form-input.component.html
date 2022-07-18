@@ -4,6 +4,7 @@
     *ngIf="type === 'text'"
     inputId="{{ inputId }}"
     name="{{ name }}"
+    (inputData)="receiveInputData($event)"
   ></app-text-input>
   <app-switch-input *ngIf="type === 'switch'"></app-switch-input>
   <button

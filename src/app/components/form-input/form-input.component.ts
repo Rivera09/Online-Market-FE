@@ -13,13 +13,20 @@ export class FormInputComponent implements OnInit {
   @Input() labelText = '';
   @Input() name: string = '';
   @Input() bottomAction: { text: string; action: () => void } | undefined;
-  @Input() change: ((e: any) => void) | undefined;
   @Output() itemSelect = new EventEmitter<string>();
+  @Output() inputValueChange = new EventEmitter<{
+    name: string;
+    value: string;
+  }>();
 
   inputId = '';
 
   dataEmitter(event: string) {
     this.itemSelect.emit(event);
+  }
+
+  receiveInputData($event: any) {
+    this.inputValueChange.emit($event);
   }
 
   constructor() {}
