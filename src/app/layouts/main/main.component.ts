@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TUserRoles } from 'contants';
 
 @Component({
   selector: 'app-main',
@@ -7,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   @Input() currentSubDir = '';
+  // temporal
+  @Input() currentRole: TUserRoles = 'admin';
 
   constructor() {}
 

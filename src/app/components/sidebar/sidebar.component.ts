@@ -13,12 +13,15 @@ const titles: Record<TUserRoles, string> = {
 })
 export class SidebarComponent implements OnInit {
   @Input() role: TUserRoles = 'admin';
-  @Input() activeDir: string = '';
-  title: string = titles[this.role];
-  options = SIDEBAR_OPTIONS.filter((option) =>
-    option.roles.includes(this.role)
-  );
+  @Input() activeDir = '';
+  title: string = '';
+  options: TSidebarOption[] = [];
 
   constructor() {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.options = SIDEBAR_OPTIONS.filter((option) =>
+      option.roles.includes(this.role)
+    );
+    this.title = titles[this.role];
+  }
 }

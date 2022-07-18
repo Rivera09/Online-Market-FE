@@ -1,1 +1,7 @@
-<router-outlet></router-outlet>
+<app-main currentSubDir="{{ currentSubDir }}" currentRole="customer">
+  <router-outlet></router-outlet>
+  <div *ngIf="isRootUrl" class="img-wrapper">
+    <img src="{{ welcomeImg }}" alt="welcome admin image" />
+    <h4>Bienvenido de vuelta (nombre cliente)</h4>
+  </div>
+</app-main>

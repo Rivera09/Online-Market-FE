@@ -25,8 +25,15 @@ const SIDEBAR_OPTIONS: TSidebarOption[] = [
   {
     id: 4,
     label: 'Carrito de Compras',
-    route: ROUTES.ADMIN.PLANS,
-    icon: 'list',
+    route: ROUTES.CUSTOMER.SHOPPING,
+    icon: 'shopping_cart',
+    roles: [USER_ROLES.CUSTOMER],
+  },
+  {
+    id: 5,
+    label: 'Historial de compras',
+    route: ROUTES.CUSTOMER.HISTORY,
+    icon: 'history',
     roles: [USER_ROLES.CUSTOMER],
   },
 ];
