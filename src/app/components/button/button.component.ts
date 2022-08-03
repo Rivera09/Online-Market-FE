@@ -14,6 +14,10 @@ export class ButtonComponent implements OnInit {
   @Input() fullWidth = false;
   @Input() onClick: (() => void) | undefined;
 
+  handleClick() {
+    if (this.onClick) this.onClick();
+  }
+
   classNames: Record<btnClassNames, boolean> = {
     'outline-btn': false,
     'primary-btn': false,

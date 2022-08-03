@@ -1,10 +1,10 @@
 <div class="form-input-wrapper">
   <label for="{{ inputId }}">{{ labelText }}</label>
   <app-text-input
-    *ngIf="type === 'text'"
+    *ngIf="type === 'text' || type === 'password'"
     inputId="{{ inputId }}"
     name="{{ name }}"
-    (inputData)="receiveInputData($event)"
+    type="{{ type }}"
   ></app-text-input>
   <app-switch-input *ngIf="type === 'switch'"></app-switch-input>
   <button

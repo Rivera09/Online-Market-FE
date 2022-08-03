@@ -1,9 +1,12 @@
-<div class="form-input-wrapper">
-  <input
-    id="{{ inputId }}"
-    name="{{ name }}"
-    type="text"
-    class="text-input"
-    (change)="onType($event)"
-  />
-</div>
+<ng-container [formGroup]="form">
+  <div class="form-input-wrapper">
+    <input
+      id="{{ inputId }}"
+      name="{{ name }}"
+      type="{{ type }}"
+      class="text-input"
+      formControlName="{{ name }}"
+      autocomplete="off"
+    />
+  </div>
+</ng-container>
