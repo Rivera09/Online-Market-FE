@@ -30,3 +30,7 @@ export interface dataSelect {
   value: string;
   option: string;
 }
+
+export type THttpResponse<T> = {
+  data: T;
+};
